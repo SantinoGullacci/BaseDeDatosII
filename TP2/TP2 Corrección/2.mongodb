@@ -1,0 +1,2 @@
+//2
+db.empleados.find({ $and: [{ edad: { $gt: 25 } }, { edad: { $lt: 40 } }] })

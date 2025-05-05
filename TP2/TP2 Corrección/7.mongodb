@@ -1,0 +1,14 @@
+//
+db.cursos.insertMany([
+    { _id: 1, nombre: "Programacion" },
+    { _id: 2, nombre: "Base de Datos" },
+    { _id: 3, nombre: "Ingles" }
+])
+
+//
+
+db.alumnos.insertMany([
+    { nombre: "Josue", edad: 20, cursos: [1, 2] },
+    { nombre: "Emiliano", edad: 22, cursos: [2, 3] },
+    { nombre: "Rodrigo", edad: 19, cursos: [1] }
+])

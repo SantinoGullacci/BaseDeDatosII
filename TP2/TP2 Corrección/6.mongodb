@@ -1,0 +1,10 @@
+//6
+db.clientes.insertMany([
+    { apellido: "Gómez", nombre: "Lucas", edad: 30 },
+    { apellido: "Pérez", nombre: "María", edad: 25 },
+    { apellido: "Gómez", nombre: "Ana", edad: 28 }
+])
+
+//
+
+db.clientes.createIndex({ apellido: 1, nombre: 1 })
