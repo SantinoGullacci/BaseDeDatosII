@@ -1,0 +1,10 @@
+//10 - Seguridad
+use empresa
+
+db.createUser({ user: "nombreUsuario", pwd: "contraseñaUsuario", roles: [{ role: "readWrite", db: "nombreBaseDeDatos" }] })
+
+//10 - Back Up
+
+mongodump --db nombreBaseDeDatos --out C:/
+
+mongorestore --db nombreBaseDeDatos C:/
