@@ -12,6 +12,7 @@ db.ventas.aggregate([
   },
   {
     $project: {
+      _id: 0,
       categoria: "$producto_info.categoria"
     }
   },
