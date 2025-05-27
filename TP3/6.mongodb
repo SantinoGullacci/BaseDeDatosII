@@ -1,14 +1,14 @@
 db.ventas.aggregate([
   {
     $project: {
-      mes: { $month: "$fecha" },
-      total: 1
+      _id: 0,
+      mes: { $month: "$fecha" }
     }
   },
   {
     $group: {
       _id: "$mes",
-      total_vendido: { $sum: "$total" }
+      total_vendido: { $sum: 1 }
     }
   },
   {
