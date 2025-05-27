@@ -13,13 +13,12 @@ db.ventas.aggregate([
   {
     $project: {
       categoria: "$producto_info.categoria",
-      total: 1
     }
   },
   {
     $group: {
       _id: "$categoria",
-      total_vendido: { $sum: "$total" }
+      total_vendido: { $sum: 1 }
     }
   }
 ]);
