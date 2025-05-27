@@ -19,14 +19,14 @@ db.ventas.aggregate([
 db.ventas.aggregate([
   {
     $project: {
-      dia_semana: { $dayOfWeek: "$fecha" },
-      total: 1
+      _id: 0,
+      dia_semana: { $dayOfWeek: "$fecha" }
     }
   },
   {
     $group: {
       _id: "$dia_semana",
-      total_vendido: { $sum: "$total" }
+      total_vendido: { $sum: 1 }
     }
   },
   {
