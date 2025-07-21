@@ -9,6 +9,12 @@ pip install pymongo
 3. Correr main.py
 4. Usar la red social desde la terminal, como vayan indicando las opciones disponibles.
 
+## Stack implementado:
+- Python y Pymongo
+
+## Interface de uso:
+- Terminal
+
 ## Integrantes:
 - Josué Chazarreta
 - Andres Aguayo
