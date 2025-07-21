@@ -17,5 +17,5 @@ pip install pymongo
 
 ## Integrantes:
 - Josué Chazarreta
-- Andres Aguayo
+- Andrés Aguayo
 - Santino Gullacci
